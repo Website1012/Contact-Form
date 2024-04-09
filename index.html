@@ -1,0 +1,39 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Conact Form.css">
+    <script src="Contact Form.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Form</title>
+</head>
+<body>
+<div class="container">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <div class="form-group">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name">
+            <span class="error" id="nameError"></span>
+        </div>
+        <div class="form-group">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email">
+            <span class="error" id="emailError"></span>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <span class="error" id="messageError"></span>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Submit">
+            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+        </div>
+    </form>
+</div>
+<form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="db5285fd-b31a-42fc-ad04-4659e4c3d540">
+</form>
+</body>
+</html>
